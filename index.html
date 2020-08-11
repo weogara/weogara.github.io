@@ -49,15 +49,21 @@
         
              
     </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 <!--    <h1>does this work</h1>
     <button>Click me</button>
     <img id="temppng" src="img/temp.png">-->
 <!--    <a href = 'https://www.google.com'>go here</a>-->
-    <video autoplay muted controls loop id="myVideo">
-        <source src = "img/fullerest.mp4" type="video/mp4">
-    </video>
+    <div class = "d-none d-lg-block">
+        <video autoplay muted controls loop id="myVideo">
+            <source src = "img/fullerest.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class = "d-lg-none d-block">
+        <img src = "img/mobile.png">
+    </div>
     <div id = "insta"><a href="https://www.instagram.com/dripdropapparel" target="_blank"></a></div>
     <div id = "facebook"><a href="https://www.facebook.com/dripdropapparel" target="_blank"></a></div>
     <div id = "logo"><a href="https://www.instagram.com/dripdropapparel" target="_blank"></a></div>
@@ -65,6 +71,7 @@
 
         document.getElementById('myVideo').play();    
        // var button = document.querySelector("button");
+
 
         //button.addEventListener("click",function(){
         //    document.body.classList.toggle("purple");
