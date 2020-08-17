@@ -4,16 +4,16 @@
     <title>dripdrop</title>
     <style>
         html {
-            background: url('img/mobile.png') no-repeat center center fixed;
+            background: url('img/mobile.png') no-repeat fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
         }
-        body{
-           /* height:100%;
+        #computer{
+            height:100%;
             width:100%;
-            position:absolute;*/
+            position:absolute;
         }
         #myVideo{
             min-height:100%;
@@ -76,9 +76,15 @@
     <button>Click me</button>
     <img id="temppng" src="img/temp.png">-->
 <!--    <a href = 'https://www.google.com'>go here</a>-->
-    <div class = "bg d-lg-none d-block">
+    <div id = "mobile" class = "bg d-lg-none d-block">
+
     </div>
-    <div class = "d-none d-lg-block">
+    
+    <div id = "tablet" class = "d-none d-md-block d-lg-none">
+    </div>
+
+    <div id = "computer" class = "d-none d-lg-block">
+
         <video autoplay muted controls loop id="myVideo">
             <source src = "img/fullerest.mp4" type="video/mp4">
         </video>
