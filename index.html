@@ -3,12 +3,19 @@
 <head>
     <title>dripdrop</title>
     <style>
-        html {
+        html{
             background: url('img/mobile.png') no-repeat fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+            z-index:-1;
+
+        }
+
+        #mobile{
+            height: 100%;
+            width: 100%;
         }
         #computer{
             height:100%;
@@ -29,42 +36,55 @@
         }
         #insta{
             position:absolute;
-            width:440px;
-            height:65px;
-            margin-left:38.5%;
-            margin-top:32.5%;
+            width:100%;
+            height:67%;
+            
         }
-        #insta:hover{
-            border-bottom:6px solid rgb(237,34,36);
+         #instamobile{
+            position:absolute;
+            width:100%;
+            height:33%;
+           /* padding: 150px;*/
         }
+        #facemobile{
+            position: absolute;
+            bottom:0px;
+            width:100%;
+            height:67%;
+        }
+         #instatablet{
+            position:absolute;
+            width:100%;
+            height:55%;
+           /* border: 6px solid orange;*/
+           /* padding: 150px;*/
+        }
+        #facetablet{
+            position: absolute;
+            bottom:0px;
+            width:100%;
+            height:45%;
+           /* border: 6px solid green;*/
+        }
+
         #facebook{
             position:absolute;
-            width:440px;
-            height:65px;
-            margin-left:38.5%;
-            margin-top:36%;
-        }
-        #facebook:hover{
-            border-bottom:6px solid rgb(237,34,36);
-        }
-        #logo{
-            width:600px;
-            height:350px;
-            margin-left:650px;
-            margin-top:-715px;
+            width:100%;
+            height:33%;
+          /*  border: 6px solid red;*/
+            bottom:0px;
         }
         a{
-        display:block;
-        height:100%;
-        width:100%;
-        }
-        .bg {
-           /* background-image: url("img/mobile.png");
-            height:100%;
             width:100%;
-            background-position:center;
-            background-repeat:no-repeat;
-            background-size:cover;*/
+            height:100%;
+            display: inline-block;
+        }
+        .center{
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            width:100%;
+            height:100%;
         }
         
              
@@ -73,14 +93,20 @@
 </head>
 <body>
 <!--    <h1>does this work</h1>
+
     <button>Click me</button>
     <img id="temppng" src="img/temp.png">-->
 <!--    <a href = 'https://www.google.com'>go here</a>-->
-    <div id = "mobile" class = "bg d-lg-none d-block">
-
+    <div id = "mobile" class = "d-block d-md-none">
+        <div id = "instamobile"><a href="https://www.instagram.com/dripdropapparel" target="_blank"></a></div>
+        <div id = "facemobile"><a href="https://www.facebook.com/dripdropapparel" target="_blank"></a></div>
+        
     </div>
     
-    <div id = "tablet" class = "d-none d-md-block d-lg-none">
+   <div id = "tablet" class = "d-none d-md-block d-lg-none">
+         <div id = "instatablet"><a href="https://www.instagram.com/dripdropapparel" target="_blank"></a></div>
+        <div id = "facetablet"><a href="https://www.facebook.com/dripdropapparel" target="_blank"></a></div>
+        
     </div>
 
     <div id = "computer" class = "d-none d-lg-block">
@@ -88,10 +114,10 @@
         <video autoplay muted controls loop id="myVideo">
             <source src = "img/fullerest.mp4" type="video/mp4">
         </video>
+        <div id = "insta"><a href="https://www.instagram.com/dripdropapparel" target="_blank"></a></div>
+        <div id = "facebook"><a href="https://www.facebook.com/dripdropapparel" target="_blank"></a></div>
+  
     </div>
-    <div id = "insta"><a href="https://www.instagram.com/dripdropapparel" target="_blank"></a></div>
-    <div id = "facebook"><a href="https://www.facebook.com/dripdropapparel" target="_blank"></a></div>
-    <div id = "logo"><a href="https://www.instagram.com/dripdropapparel" target="_blank"></a></div>
     <script>
 
         document.getElementById('myVideo').play();    
